@@ -1,0 +1,28 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+<%# Comment
+
+%>
+<%= "Count to 10" %>
+
+<% 11.times do |i| %>
+  <%= i %>
+<% end %>
+
+
+
+<%=
+  age = 20
+  if age >= 25
+    age.to_s + ' old'
+  else
+    age.to_s + ' young'
+  end
+ %>
+
+
+<%= link_to('Go to Sample',
+  {:controller => 'welcome',
+    :action => 'sample'})
+%>
